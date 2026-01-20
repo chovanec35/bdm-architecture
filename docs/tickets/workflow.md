@@ -9,14 +9,14 @@ States:
 - REJECTED
 
 ```mermaid
-    [] --> REPORTED
-    REPORTED --> TRIAGED : admin
-    TRIAGED --> IN_PROGRESS : admin
-    IN_PROGRESS --> DONE : admin/tech
-    DONE --> CLOSED : admin
-    REPORTED --> REJECTED : admin
-    REJECTED --> []
-    CLOSED --> [*]
+[] --> REPORTED
+REPORTED --> TRIAGED : admin
+TRIAGED --> IN_PROGRESS : admin
+IN_PROGRESS --> DONE : admin/tech
+DONE --> CLOSED : admin
+REPORTED --> REJECTED : admin
+REJECTED --> []
+CLOSED --> [*]
 ```
 
 Transitions:
